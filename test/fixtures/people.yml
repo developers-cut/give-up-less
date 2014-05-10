@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  wants_to_give_up: MyString
+  reason: MyText
+  email: MyString
+
+two:
+  wants_to_give_up: MyString
+  reason: MyText
+  email: MyString
