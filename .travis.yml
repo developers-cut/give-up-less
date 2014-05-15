@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 1.9.3
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
 deploy:
@@ -6,5 +8,6 @@ deploy:
   api_key:
     secure: WE3Ye4Fg3KnOU/JsczcqWnxDBP1FXORHiBASBv7uX2yt3psd4fSVuqC8llGKV+y0OIr3QKRwbs9siETmClkXQVpfjxnpBO5Z6BSxpvYtUwEtSTWSftenXOd+Qf/+BrC7EPHoYs5RKV1qpJ7PiBaj53TTktcRFu8ZEaB5qYMWh4Y=
   app: give-up-less
+  run: "rake db:migrate"
   on:
     repo: developers-cut/give-up-less
