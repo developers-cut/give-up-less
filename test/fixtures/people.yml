@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  wants_to_give_up: MyString
-  reason: MyText
+  give_up_what: MyString
+  give_up_why: MyText
   email: MyString
 
 two:
-  wants_to_give_up: MyString
-  reason: MyText
+  give_up_what: MyString
+  give_up_why: MyText
   email: MyString

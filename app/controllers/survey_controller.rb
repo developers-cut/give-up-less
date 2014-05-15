@@ -2,6 +2,6 @@ class SurveyController < ApplicationController
   def index
   end
 
-  def results
+  def subscribe
   end
 end

@@ -1,7 +1,6 @@
 GiveUpLess::Application.routes.draw do
   get "survey/index"
-
-  get "survey/results"
+  get "survey/subscribe"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

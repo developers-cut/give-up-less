@@ -6,8 +6,8 @@ class SurveyControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get results" do
-    get :results
+  test "should get subscribe" do
+    get :subscribe
     assert_response :success
   end
 
