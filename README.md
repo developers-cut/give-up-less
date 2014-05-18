@@ -2,5 +2,7 @@
 (We need a slogan...)
 
 ## Build status
-![codeship build](
-https://www.codeship.io/projects/8fc48160-baa5-0131-497c-2aa5de3a5663/status)
+For development:
+![build_dev](https://travis-ci.org/developers-cut/give-up-less.svg?branch=master)
+For production:
+![build_prod](https://travis-ci.org/developers-cut/give-up-less.svg?branch=production)
