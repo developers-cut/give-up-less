@@ -11,5 +11,6 @@ deploy:
     master: give-up-less-dev
     production: give-up-less-prod
   run: "rake db:migrate"
+  strategy: git
   on:
     repo: developers-cut/give-up-less
