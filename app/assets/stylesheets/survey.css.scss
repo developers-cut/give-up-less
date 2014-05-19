@@ -5,24 +5,29 @@
 @import 'bootstrap';
 @import 'variables';
 @import 'compass/css3/border-radius';
+@import 'compass/layout/sticky-footer';
 
-html, body, #survey-index {
+
+@include sticky-footer(70px, '#survey-index', '#root-footer', '#footer');
+
+
+html, body {
     height: 100%;
-}
-
-body {
-    display: table;
-    width: 100%;
-}
-
-#survey-index {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
 }
 
 h1, p {
     text-align: center;
+}
+
+.valign-in {
+    display: table;
+    width: 100%;
+}
+
+.valign-out {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
 }
 
 h1 {
@@ -30,11 +35,11 @@ h1 {
     font-weight: 700;
     letter-spacing: 3px;
 
-    @include text-shadow(8px 5px 5px #000); //10px 0 3px #000);
+    @include text-shadow(8px 5px 5px #000);
 }
 
 p {
-    @include text-shadow(3px 1px 1px #000); //, 3px 0 1px #000);
+    @include text-shadow(3px 1px 1px #000);
 }
 
 p, .radio {
@@ -56,6 +61,7 @@ p, .radio {
 input[type="submit"] {
     background-color: $palette_cyan;
     color: #fff;
+    margin-bottom: 30px;
 
     &:hover {
         background-color: darken($palette_cyan, 10%);
@@ -78,7 +84,7 @@ ul {
 }
 
 li {
-    background-color: transparentize(#000, 0.7);
+    background-color: transparentize(#000, .7);
     border: solid 1px #fff;
     margin-bottom: 10px;
 
@@ -95,4 +101,14 @@ li {
 
 li.selected {
     background-color: $palette_green;
+}
+
+footer {
+    background-color: transparentize($palette_grey, .4);
+    color: $palette_wheat;
+    padding: 10px;
+
+    img {
+        margin-right: 30px;
+    }
 }
