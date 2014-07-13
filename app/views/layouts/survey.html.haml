@@ -1,0 +1,21 @@
+!!! 5
+%html
+    %head
+        %title Give Up Less
+        = stylesheet_link_tag    "application", :media => "all"
+        = javascript_include_tag "application"
+        = csrf_meta_tags
+%body
+    #survey-index
+        .valign-in
+            .valign-out
+                = yield
+        #root-footer
+    %footer#footer
+        .container
+            %a{:href => "//giveupless.org"}
+                =image_tag 'give-up-less_logo.png'
+            %span A project by
+            %a{:href => "//developerscut.co.uk"}
+                =image_tag 'd-c_logo.png'
+            %span.pull-right Photo by Jed Jacobsohn, for The New York Times.
